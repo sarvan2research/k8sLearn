@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: k8s-boot-demo-pod
+spec:
+  restartPolicy: Never
+  containers:
+    - name: k8s-boot-demo
+      image: saravankumar/k8s:v1
+      ports:
+        - containerPort: 8079
